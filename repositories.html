@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>我的项目 - 赵平骁</title>
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 body{
     width:100vw;
     height:100vh;
@@ -12,27 +17,49 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    font-family:system-ui, sans-serif;
+    font-family:system-ui, -apple-system, sans-serif;
     color:white;
+    text-align:center;
 }
-a{
-    font-size:36px;
-    font-weight:bold;
-    color:white;
-    text-decoration:none;
-    background:rgba(0,0,0,0.2);
-    padding:30px 60px;
+.project-card{
+    background:rgba(255,255,255,0.95);
+    color:#222;
+    padding:45px 60px;
     border-radius:20px;
-    transition:0.3s;
+    box-shadow:0 8px 30px rgba(0,0,0,0.15);
 }
-a:hover{
-    transform:scale(1.1);
-    background:rgba(0,0,0,0.3);
+.project-card h1{
+    font-size:32px;
+    margin-bottom:12px;
+}
+.project-card p{
+    font-size:17px;
+    color:#555;
+    margin-bottom:25px;
+}
+.project-card a{
+    display:inline-block;
+    padding:14px 32px;
+    background:#4facfe;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    border-radius:12px;
+    text-decoration:none;
+    transition:0.25s ease;
+}
+.project-card a:hover{
+    background:#00f2fe;
+    transform:scale(1.05);
 }
 </style>
 </head>
 
 <body>
-    <a href="https://github.com/zhaopingxiao/pynas" target="_blank">PyNAS</a>
+<div class="project-card">
+    <h1>PyNAS</h1>
+    <p>基于 Flask 开发的轻量级个人网络存储系统</p>
+    <a href="https://github.com/zhaopingxiao/pynas" target="_blank">查看项目源码</a>
+</div>
 </body>
 </html>
